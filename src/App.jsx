@@ -15,7 +15,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sainath.com">
       <div className="app">
         <Navbar />
         <main>
