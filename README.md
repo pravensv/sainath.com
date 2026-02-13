@@ -201,6 +201,11 @@ This project is licensed under the MIT License.
 
 Built with ❤️ using React + Vite
 
+ git add -A   
+git commit -m "fix: auto-enable GitHub Pages in deploy workflow"
+git push origin main
+
+
 
 
 Ai prompt

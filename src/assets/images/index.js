@@ -8,6 +8,12 @@ import xiaomi14Pro from './xiaomi-14-pro.png';
 import xiaomi13 from './xiaomi-13.png';
 import case1 from './case-1.png';
 import charger1 from './charger-1.png';
+import speakerGo4 from './speaker-go4.png';
+import speakerClip5 from './speaker-clip5.png';
+import speakerFlip6 from './speaker-flip6.png';
+import screenGuard1 from './screen-guard-1.png';
+import torch1 from './torch-1.png';
+import earphones1 from './earphones-1.png';
 
 // Map product image keys to imported assets
 // Brand-level images are shared across models of the same brand
@@ -31,6 +37,12 @@ const productImages = {
     // Accessories
     'case-1.jpg': case1,
     'charger-1.jpg': charger1,
+    'speaker-go4.jpg': speakerGo4,
+    'speaker-clip5.jpg': speakerClip5,
+    'speaker-flip6.jpg': speakerFlip6,
+    'screen-guard-1.jpg': screenGuard1,
+    'torch-1.jpg': torch1,
+    'earphones-1.jpg': earphones1,
 };
 
 export const getProductImage = (imageKey) => {
