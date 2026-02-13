@@ -32,6 +32,7 @@ const Footer = () => {
                             <li><Link to="/products" className={styles.footerLink}>Products</Link></li>
                             <li><Link to="/cart" className={styles.footerLink}>Cart</Link></li>
                             <li><Link to="/repair" className={styles.footerLink}>Repair</Link></li>
+                            <li><Link to="/orders" className={styles.footerLink}>My Orders</Link></li>
                             <li><Link to="/profile" className={styles.footerLink}>My Profile</Link></li>
                         </ul>
                     </div>

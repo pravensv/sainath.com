@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import mockUsers from '../data/mockUsers.json';
 
 // Load user from localStorage
 const loadUser = () => {
@@ -12,12 +13,18 @@ const loadUser = () => {
     return { user: null, isAuthenticated: false };
 };
 
-// Load registered users
+// Load registered users (seed mock users on first run)
 const loadUsers = () => {
     try {
         const data = localStorage.getItem('sn_users');
-        return data ? JSON.parse(data) : [];
-    } catch (e) { return []; }
+        if (data) {
+            const users = JSON.parse(data);
+            if (users.length > 0) return users;
+        }
+    } catch (e) { /* ignore */ }
+    // First run — seed with mock users
+    localStorage.setItem('sn_users', JSON.stringify(mockUsers));
+    return [...mockUsers];
 };
 
 const saveAuth = (user) => {

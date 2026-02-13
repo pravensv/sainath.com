@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../redux/cartSlice';
+import { placeOrder } from '../redux/ordersSlice';
 import styles from './Checkout.module.css';
 
 const Checkout = () => {
@@ -50,7 +51,21 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process payment here
+    // Create the order in Redux
+    dispatch(placeOrder({
+      items,
+      totalAmount: Math.round(totalAmount * 1.18),
+      shippingInfo: {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        address: formData.address,
+        city: formData.city,
+        pincode: formData.pincode,
+      },
+      paymentMethod: formData.paymentMethod,
+      userId: user?.id,
+    }));
     setOrderPlaced(true);
     dispatch(clearCart());
   };
@@ -66,6 +81,7 @@ const Checkout = () => {
         <h1>Order Placed Successfully!</h1>
         <p>Thank you for your purchase. Your order will be delivered soon.</p>
         <div className={styles.successActions}>
+          <button onClick={() => navigate('/orders')}>View My Orders</button>
           <button onClick={() => navigate('/')}>Back to Home</button>
           <button onClick={() => navigate('/products')}>Continue Shopping</button>
         </div>

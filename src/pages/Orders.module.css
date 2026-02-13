@@ -1,0 +1,493 @@
+.orders {
+    min-height: 100vh;
+    padding: 2rem 0 4rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Header ── */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.orderCount {
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-xl);
+    background: rgba(102, 126, 234, 0.15);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ── Empty State ── */
+.emptyState {
+    text-align: center;
+    padding: 6rem 2rem;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.emptyIcon {
+    width: 100px;
+    height: 100px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.emptyIcon svg {
+    width: 48px;
+    height: 48px;
+    color: var(--text-muted);
+}
+
+.emptyState h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.emptyState p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 360px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.shopBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 2rem;
+    background: var(--primary-gradient);
+    color: white;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+}
+
+.shopBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
+}
+
+.shopBtn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ── Order List ── */
+.orderList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ── Order Card ── */
+.orderCard {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    overflow: hidden;
+    transition: all var(--transition-base);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.orderCard:hover {
+    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.cardGlow {
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Order Header ── */
+.orderHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+.orderId {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.orderIdLabel {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.orderIdValue {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+    color: var(--text-primary);
+}
+
+.orderDate {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.orderDate svg {
+    width: 16px;
+    height: 16px;
+    color: var(--primary-color);
+}
+
+/* ── Status Badge ── */
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius-xl);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.statusBadge svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ── Timeline ── */
+.timeline {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.timelineStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.stepDot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.stepDot svg {
+    width: 14px;
+    height: 14px;
+    color: white;
+}
+
+.stepCompleted {
+    border-color: transparent;
+}
+
+.stepCurrent {
+    box-shadow: 0 0 16px rgba(102, 126, 234, 0.4);
+    transform: scale(1.15);
+}
+
+.stepLabel {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.stepLabelActive {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.stepLine {
+    position: absolute;
+    top: 15px;
+    left: calc(50% + 16px);
+    right: calc(-50% + 16px);
+    height: 2px;
+    background: var(--border-color);
+    z-index: 1;
+    transition: background 0.4s ease;
+}
+
+/* ── Order Items ── */
+.orderItems {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+.itemsTitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-family: var(--font-body);
+    margin-bottom: 0.75rem;
+}
+
+.orderItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+}
+
+.orderItem+.orderItem {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.itemDetails {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.itemName {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemQty {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: var(--bg-hover);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.itemPrice {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ── Order Footer ── */
+.orderFooter {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.shippingInfo,
+.paymentInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.shippingInfo svg,
+.paymentInfo svg {
+    width: 16px;
+    height: 16px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.shippingInfo span,
+.paymentInfo span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+}
+
+.orderTotal {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.totalLabel {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.totalValue {
+    font-size: 1.35rem;
+    font-weight: 700;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .orderCard {
+        padding: 1.5rem;
+    }
+
+    .orderHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .timeline {
+        gap: 0;
+    }
+
+    .stepLabel {
+        font-size: 0.6rem;
+    }
+
+    .stepDot {
+        width: 28px;
+        height: 28px;
+    }
+
+    .stepDot svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .stepLine {
+        top: 13px;
+        left: calc(50% + 14px);
+        right: calc(-50% + 14px);
+    }
+
+    .orderFooter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .orderTotal {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .shippingInfo span {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orders {
+        padding: 1.5rem 0 3rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .emptyState {
+        padding: 4rem 1rem;
+    }
+
+    .emptyIcon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .emptyIcon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .itemName {
+        max-width: 160px;
+    }
+}

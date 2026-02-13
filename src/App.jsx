@@ -12,6 +12,7 @@ import SignUp from './pages/SignUp';
 import EditProfile from './pages/EditProfile';
 import ChangePassword from './pages/ChangePassword';
 import Repair from './pages/Repair';
+import Orders from './pages/Orders';
 import './styles/global.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/edit-profile" element={<EditProfile />} />
             <Route path="/change-password" element={<ChangePassword />} />
             <Route path="/repair" element={<Repair />} />
+            <Route path="/orders" element={<Orders />} />
           </Routes>
         </main>
         <Footer />
