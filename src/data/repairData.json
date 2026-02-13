@@ -1,0 +1,297 @@
+{
+    "repairProblems": [
+        {
+            "id": "screen-replacement",
+            "name": "Screen Replacement",
+            "icon": "screen",
+            "description": "Cracked, broken, or unresponsive display"
+        },
+        {
+            "id": "battery-replacement",
+            "name": "Battery Replacement",
+            "icon": "battery",
+            "description": "Battery draining fast or swollen battery"
+        },
+        {
+            "id": "charging-port",
+            "name": "Charging Port Repair",
+            "icon": "charging",
+            "description": "Not charging or loose connection"
+        },
+        {
+            "id": "back-glass",
+            "name": "Back Glass Replacement",
+            "icon": "back",
+            "description": "Cracked or shattered back panel"
+        },
+        {
+            "id": "camera-lens",
+            "name": "Camera Lens Repair",
+            "icon": "camera",
+            "description": "Broken camera glass or blurry photos"
+        },
+        {
+            "id": "speaker-mic",
+            "name": "Speaker / Mic Repair",
+            "icon": "speaker",
+            "description": "No sound, low volume, or mic not working"
+        },
+        {
+            "id": "water-damage",
+            "name": "Water Damage Repair",
+            "icon": "water",
+            "description": "Device dropped in water or liquid spill"
+        },
+        {
+            "id": "software-issue",
+            "name": "Software Issues",
+            "icon": "software",
+            "description": "Hanging, crashing, or boot loop problems"
+        }
+    ],
+    "brands": [
+        {
+            "id": "apple",
+            "name": "Apple",
+            "models": [
+                "iPhone 16 Pro Max",
+                "iPhone 16 Pro",
+                "iPhone 16 Plus",
+                "iPhone 16",
+                "iPhone 15 Pro Max",
+                "iPhone 15 Pro",
+                "iPhone 15 Plus",
+                "iPhone 15",
+                "iPhone 14 Pro Max",
+                "iPhone 14 Pro",
+                "iPhone 14",
+                "iPhone 13 Pro Max",
+                "iPhone 13 Pro",
+                "iPhone 13",
+                "iPhone 12 Pro Max",
+                "iPhone 12 Pro",
+                "iPhone 12",
+                "iPhone 11 Pro Max",
+                "iPhone 11 Pro",
+                "iPhone 11",
+                "iPhone SE (2024)",
+                "iPhone SE (2022)"
+            ],
+            "pricing": {
+                "screen-replacement": {
+                    "min": 3500,
+                    "max": 29999
+                },
+                "battery-replacement": {
+                    "min": 1999,
+                    "max": 8999
+                },
+                "charging-port": {
+                    "min": 1499,
+                    "max": 4999
+                },
+                "back-glass": {
+                    "min": 2999,
+                    "max": 14999
+                },
+                "camera-lens": {
+                    "min": 1999,
+                    "max": 9999
+                },
+                "speaker-mic": {
+                    "min": 999,
+                    "max": 3999
+                },
+                "water-damage": {
+                    "min": 2999,
+                    "max": 12999
+                },
+                "software-issue": {
+                    "min": 499,
+                    "max": 1999
+                }
+            }
+        },
+        {
+            "id": "samsung",
+            "name": "Samsung",
+            "models": [
+                "Galaxy S24 Ultra",
+                "Galaxy S24+",
+                "Galaxy S24",
+                "Galaxy S23 Ultra",
+                "Galaxy S23+",
+                "Galaxy S23",
+                "Galaxy S22 Ultra",
+                "Galaxy S22+",
+                "Galaxy S22",
+                "Galaxy Z Fold 5",
+                "Galaxy Z Flip 5",
+                "Galaxy Z Fold 4",
+                "Galaxy Z Flip 4",
+                "Galaxy A55 5G",
+                "Galaxy A54 5G",
+                "Galaxy A53 5G",
+                "Galaxy A35 5G",
+                "Galaxy A34 5G",
+                "Galaxy A25 5G",
+                "Galaxy A15 5G",
+                "Galaxy M55 5G",
+                "Galaxy M34 5G"
+            ],
+            "pricing": {
+                "screen-replacement": {
+                    "min": 2999,
+                    "max": 24999
+                },
+                "battery-replacement": {
+                    "min": 1499,
+                    "max": 6999
+                },
+                "charging-port": {
+                    "min": 999,
+                    "max": 3999
+                },
+                "back-glass": {
+                    "min": 1999,
+                    "max": 12999
+                },
+                "camera-lens": {
+                    "min": 1499,
+                    "max": 7999
+                },
+                "speaker-mic": {
+                    "min": 799,
+                    "max": 2999
+                },
+                "water-damage": {
+                    "min": 2499,
+                    "max": 9999
+                },
+                "software-issue": {
+                    "min": 499,
+                    "max": 1499
+                }
+            }
+        },
+        {
+            "id": "oneplus",
+            "name": "OnePlus",
+            "models": [
+                "OnePlus 12R",
+                "OnePlus 12",
+                "OnePlus 11R",
+                "OnePlus 11",
+                "OnePlus 10T 5G",
+                "OnePlus 10 Pro",
+                "OnePlus 10R 5G",
+                "OnePlus 9 Pro",
+                "OnePlus 9",
+                "OnePlus 9RT",
+                "OnePlus 9R",
+                "OnePlus Nord CE4",
+                "OnePlus Nord CE3",
+                "OnePlus Nord 3 5G",
+                "OnePlus Open",
+                "OnePlus 8T",
+                "OnePlus 8 Pro",
+                "OnePlus 7T Pro",
+                "OnePlus 7T"
+            ],
+            "pricing": {
+                "screen-replacement": {
+                    "min": 2499,
+                    "max": 19999
+                },
+                "battery-replacement": {
+                    "min": 1299,
+                    "max": 4999
+                },
+                "charging-port": {
+                    "min": 899,
+                    "max": 2999
+                },
+                "back-glass": {
+                    "min": 1499,
+                    "max": 7999
+                },
+                "camera-lens": {
+                    "min": 999,
+                    "max": 5999
+                },
+                "speaker-mic": {
+                    "min": 699,
+                    "max": 2499
+                },
+                "water-damage": {
+                    "min": 1999,
+                    "max": 7999
+                },
+                "software-issue": {
+                    "min": 399,
+                    "max": 1299
+                }
+            }
+        },
+        {
+            "id": "xiaomi",
+            "name": "Xiaomi",
+            "models": [
+                "Xiaomi 14 Ultra",
+                "Xiaomi 14 Pro",
+                "Xiaomi 14",
+                "Xiaomi 13 Ultra",
+                "Xiaomi 13 Pro",
+                "Xiaomi 13",
+                "Xiaomi 12 Pro",
+                "Xiaomi 12",
+                "Xiaomi 11 Ultra",
+                "Xiaomi 11",
+                "Redmi Note 13 Pro+ 5G",
+                "Redmi Note 13 Pro 5G",
+                "Redmi Note 13 5G",
+                "Redmi Note 12 Pro+ 5G",
+                "Redmi Note 12 Pro 5G",
+                "POCO F6 Pro",
+                "POCO F6",
+                "POCO F5",
+                "POCO X6 Pro 5G",
+                "POCO X6 5G"
+            ],
+            "pricing": {
+                "screen-replacement": {
+                    "min": 1999,
+                    "max": 16999
+                },
+                "battery-replacement": {
+                    "min": 999,
+                    "max": 3999
+                },
+                "charging-port": {
+                    "min": 699,
+                    "max": 2499
+                },
+                "back-glass": {
+                    "min": 999,
+                    "max": 5999
+                },
+                "camera-lens": {
+                    "min": 799,
+                    "max": 4999
+                },
+                "speaker-mic": {
+                    "min": 599,
+                    "max": 1999
+                },
+                "water-damage": {
+                    "min": 1499,
+                    "max": 6999
+                },
+                "software-issue": {
+                    "min": 299,
+                    "max": 999
+                }
+            }
+        }
+    ]
+}

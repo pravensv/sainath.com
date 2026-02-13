@@ -14,6 +14,7 @@ const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const searchRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -25,6 +26,7 @@ const Navbar = () => {
     e.preventDefault();
     dispatch(setSelectedCategory(categoryId));
     dispatch(setSelectedBrand(null));
+    setMobileMenuOpen(false);
     navigate('/products');
   };
 
@@ -32,7 +34,13 @@ const Navbar = () => {
     e.preventDefault();
     dispatch(setSelectedCategory(null));
     dispatch(setSelectedBrand(null));
+    setMobileMenuOpen(false);
     navigate('/products');
+  };
+
+  const handleMobileNavClick = (path) => {
+    setMobileMenuOpen(false);
+    navigate(path);
   };
 
   // Search logic
@@ -112,6 +120,7 @@ const Navbar = () => {
           <a href="/products" className={styles.navLink} onClick={handleProductsClick}>Products</a>
           <a href="/products" className={styles.navLink} onClick={handleCategoryClick('mobiles')}>Mobiles</a>
           <a href="/products" className={styles.navLink} onClick={handleCategoryClick('accessories')}>Accessories</a>
+          <Link to="/repair" className={styles.navLink}>Repair</Link>
         </div>
 
         <div className={styles.navActions}>
@@ -210,6 +219,82 @@ const Navbar = () => {
               <span className={styles.cartBadge}>{cartQuantity}</span>
             )}
           </button>
+
+          {/* Hamburger Button (mobile only) */}
+          <button
+            className={`${styles.hamburgerBtn} ${mobileMenuOpen ? styles.hamburgerOpen : ''}`}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Menu"
+          >
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+          </button>
+        </div>
+
+        {/* Mobile Menu Overlay */}
+        {mobileMenuOpen && (
+          <div className={styles.mobileOverlay} onClick={() => setMobileMenuOpen(false)} />
+        )}
+        <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+          <div className={styles.mobileMenuHeader}>
+            <div className={styles.logoIcon}>SN</div>
+            <span className={styles.mobileMenuTitle}>Menu</span>
+            <button className={styles.mobileCloseBtn} onClick={() => setMobileMenuOpen(false)} aria-label="Close menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <nav className={styles.mobileNav}>
+            <button className={styles.mobileNavItem} onClick={() => handleMobileNavClick('/')}>
+              <div className={styles.mobileNavIcon}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <span>Home</span>
+            </button>
+            <button className={styles.mobileNavItem} onClick={handleProductsClick}>
+              <div className={styles.mobileNavIcon}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <span>Products</span>
+            </button>
+            <button className={styles.mobileNavItem} onClick={handleCategoryClick('mobiles')}>
+              <div className={styles.mobileNavIcon}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="5" y="2" width="14" height="20" rx="2" strokeWidth={2} />
+                  <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth={2} strokeLinecap="round" />
+                </svg>
+              </div>
+              <span>Mobiles</span>
+            </button>
+            <button className={styles.mobileNavItem} onClick={handleCategoryClick('accessories')}>
+              <div className={styles.mobileNavIcon}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <span>Accessories</span>
+            </button>
+            <button className={`${styles.mobileNavItem} ${styles.mobileNavRepair}`} onClick={() => handleMobileNavClick('/repair')}>
+              <div className={styles.mobileNavIcon} style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <circle cx="12" cy="12" r="3" strokeWidth={2} />
+                </svg>
+              </div>
+              <span>Repair</span>
+              <div className={styles.mobileNavBadge}>New</div>
+            </button>
+          </nav>
+          <div className={styles.mobileMenuFooter}>
+            <p>Sai Nath Mobile</p>
+            <span>Your trusted mobile partner</span>
+          </div>
         </div>
       </div>
     </nav>

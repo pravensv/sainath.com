@@ -245,7 +245,7 @@ Components
 Navbar (sticky top) — Logo "SN" icon + "Sai Nath Mobile" text, nav links: Home, Products, Accessories (clicking Accessories navigates to Products with accessories category pre-selected), profile button (shows user's first initial when logged in, generic person icon when logged out), cart button with quantity badge
 Footer — Brand section with logo + description, Quick Links (Home, Products, Cart, My Profile), Categories (Smartphones, Accessories, New Arrivals, Best Sellers), Contact info (Hyderabad address, email: 
 support@sainathmobile.com
-, phone: +91 98765 43210), social media icons (Facebook, Instagram, Twitter, YouTube), newsletter email signup, bottom bar with copyright + Privacy Policy / Terms of Service / Refund Policy
+, phone: +91 995147XXXXXX), social media icons (Facebook, Instagram, Twitter, YouTube), newsletter email signup, bottom bar with copyright + Privacy Policy / Terms of Service / Refund Policy
 Redux State
 productsSlice — Loads categories, brands, and products from a JSON data file. Manages selectedCategory and selectedBrand filters.
 cartSlice — Manages cart items array, totalQuantity, totalAmount. Actions: addToCart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart.

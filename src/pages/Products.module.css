@@ -135,6 +135,64 @@
   z-index: 1;
 }
 
+/* Repair Services Card */
+.repairCard {
+  border-color: rgba(240, 147, 251, 0.25);
+  position: relative;
+}
+
+.repairCard:hover {
+  border-color: #f093fb;
+  box-shadow: 0 0 24px rgba(240, 147, 251, 0.35);
+}
+
+.repairCard:hover::before {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  opacity: 0.1;
+}
+
+.repairGlow {
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(240, 147, 251, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.repairBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.15) 0%, rgba(245, 87, 108, 0.15) 100%);
+  color: #f093fb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  transition: all var(--transition-base);
+}
+
+.repairBadge svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.repairCard:hover .repairBadge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.repairCard:hover .repairBadge svg {
+  transform: translateX(3px);
+}
+
 /* Brand Grid */
 .brandGrid {
   display: grid;

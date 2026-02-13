@@ -11,6 +11,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import EditProfile from './pages/EditProfile';
 import ChangePassword from './pages/ChangePassword';
+import Repair from './pages/Repair';
 import './styles/global.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/edit-profile" element={<EditProfile />} />
             <Route path="/change-password" element={<ChangePassword />} />
+            <Route path="/repair" element={<Repair />} />
           </Routes>
         </main>
         <Footer />

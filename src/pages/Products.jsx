@@ -97,6 +97,31 @@ const Products = () => {
                   <p>{category.description}</p>
                 </div>
               ))}
+
+              {/* Repair Services Card */}
+              <div
+                className={`${styles.categoryCard} ${styles.repairCard}`}
+                onClick={() => navigate('/repair')}
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => { if (e.key === 'Enter') navigate('/repair'); }}
+              >
+                <div className={styles.repairGlow} />
+                <div className={styles.categoryIcon} style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' }}>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <circle cx="12" cy="12" r="3" strokeWidth={2} />
+                  </svg>
+                </div>
+                <h3>Repair Services</h3>
+                <p>Expert mobile repairs with genuine parts & 90-day warranty</p>
+                <div className={styles.repairBadge}>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                  Get Estimate
+                </div>
+              </div>
             </div>
           </div>
         )}
