@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setSelectedCategory, setSelectedBrand } from '../redux/productsSlice';
+import { setSelectedCategory, setSelectedBrand } from '../redux/productsSlice'; // clearSelection not exported? check slice
 import { getProductImage } from '../assets/images';
 import styles from './Products.module.css';
+import { fuzzySearch } from '../utils/search';
 
 const Products = () => {
   const navigate = useNavigate();
@@ -13,15 +14,36 @@ const Products = () => {
     (state) => state.products
   );
 
+  const [searchParams] = useSearchParams();
+  const searchQuery = searchParams.get('search');
+  const [searchResults, setSearchResults] = useState([]);
+
+  // Search Logic
+  useEffect(() => {
+    if (searchQuery) {
+      // Clear category/brand if searching (optional UX choice, keeps it clean)
+      dispatch(setSelectedCategory(null));
+      dispatch(setSelectedBrand(null));
+
+      const results = fuzzySearch(products, searchQuery);
+      setSearchResults(results);
+    } else {
+      setSearchResults([]);
+    }
+  }, [searchQuery, products, dispatch]);
+
   const filteredBrands = selectedCategory
     ? brands.filter((brand) => brand.categoryId === selectedCategory)
     : [];
 
-  const filteredProducts = selectedBrand
-    ? products.filter((product) => product.brandId === selectedBrand)
-    : selectedCategory
-      ? products.filter((product) => product.categoryId === selectedCategory)
-      : products;
+  // Determine which products to show
+  const displayProducts = searchQuery
+    ? searchResults
+    : selectedBrand
+      ? products.filter((product) => product.brandId === selectedBrand)
+      : selectedCategory
+        ? products.filter((product) => product.categoryId === selectedCategory)
+        : products;
 
   const handleCategorySelect = (categoryId) => {
     dispatch(setSelectedCategory(categoryId));
@@ -40,11 +62,13 @@ const Products = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            {selectedBrand
-              ? brands.find((b) => b.id === selectedBrand)?.name
-              : selectedCategory
-                ? categories.find((c) => c.id === selectedCategory)?.name
-                : 'All Products'}
+            {searchQuery
+              ? `Search Results for "${searchQuery}"`
+              : selectedBrand
+                ? brands.find((b) => b.id === selectedBrand)?.name
+                : selectedCategory
+                  ? categories.find((c) => c.id === selectedCategory)?.name
+                  : 'All Products'}
           </h1>
           {(selectedCategory || selectedBrand) && (
             <button
@@ -151,53 +175,66 @@ const Products = () => {
         )}
 
         {/* Show Products */}
-        {(selectedBrand || selectedCategory) && (
+        {(selectedBrand || selectedCategory || searchQuery) && (
           <div className={styles.productSection}>
-            <div className={styles.productGrid}>
-              {filteredProducts.map((product) => (
-                <div
-                  key={product.id}
-                  className={styles.productCard}
-                  onClick={() => handleProductClick(product.id)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyPress={(e) => {
-                    if (e.key === 'Enter') handleProductClick(product.id);
-                  }}
+            {displayProducts.length === 0 ? (
+              <div className={styles.noResults}>
+                <p>No products found matching your criteria.</p>
+                <button
+                  className={styles.backButton}
+                  onClick={() => navigate('/products')}
+                  style={{ marginTop: '1rem' }}
                 >
-                  <div className={styles.productImage}>
-                    {getProductImage(product.image) ? (
-                      <img
-                        src={getProductImage(product.image)}
-                        alt={product.name}
-                        className={styles.productImg}
-                      />
-                    ) : (
-                      <div className={styles.productImagePlaceholder}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth={2} />
-                          <circle cx="8.5" cy="8.5" r="1.5" strokeWidth={2} />
-                          <polyline points="21 15 16 10 5 21" strokeWidth={2} />
-                        </svg>
-                      </div>
-                    )}
-                    {product.inStock ? (
-                      <span className={styles.stockBadge}>In Stock</span>
-                    ) : (
-                      <span className={`${styles.stockBadge} ${styles.outOfStock}`}>Out of Stock</span>
-                    )}
-                  </div>
-                  <div className={styles.productInfo}>
-                    <h3 className={styles.productName}>{product.name}</h3>
-                    <div className={styles.productRating}>
-                      {'★'.repeat(Math.floor(product.rating))}
-                      <span>{product.rating}</span>
+                  Clear Search
+                </button>
+              </div>
+            ) : (
+              <div className={styles.productGrid}>
+                {displayProducts.map((product) => (
+                  <div
+                    key={product.id}
+                    className={styles.productCard}
+                    onClick={() => handleProductClick(product.id)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyPress={(e) => {
+                      if (e.key === 'Enter') handleProductClick(product.id);
+                    }}
+                  >
+                    <div className={styles.productImage}>
+                      {getProductImage(product.image) ? (
+                        <img
+                          src={getProductImage(product.image)}
+                          alt={product.name}
+                          className={styles.productImg}
+                        />
+                      ) : (
+                        <div className={styles.productImagePlaceholder}>
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth={2} />
+                            <circle cx="8.5" cy="8.5" r="1.5" strokeWidth={2} />
+                            <polyline points="21 15 16 10 5 21" strokeWidth={2} />
+                          </svg>
+                        </div>
+                      )}
+                      {product.inStock ? (
+                        <span className={styles.stockBadge}>In Stock</span>
+                      ) : (
+                        <span className={`${styles.stockBadge} ${styles.outOfStock}`}>Out of Stock</span>
+                      )}
                     </div>
-                    <p className={styles.productPrice}>₹{product.price.toLocaleString('en-IN')}</p>
+                    <div className={styles.productInfo}>
+                      <h3 className={styles.productName}>{product.name}</h3>
+                      <div className={styles.productRating}>
+                        {'★'.repeat(Math.floor(product.rating))}
+                        <span>{product.rating}</span>
+                      </div>
+                      <p className={styles.productPrice}>₹{product.price.toLocaleString('en-IN')}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>
