@@ -117,7 +117,6 @@ const Navbar = () => {
 
         <div className={styles.navLinks}>
           <Link to="/" className={styles.navLink}>Home</Link>
-          <a href="/products" className={styles.navLink} onClick={handleProductsClick}>Products</a>
           <a href="/products" className={styles.navLink} onClick={handleCategoryClick('mobiles')}>Mobiles</a>
           <a href="/products" className={styles.navLink} onClick={handleCategoryClick('accessories')}>Accessories</a>
           <Link to="/repair" className={styles.navLink}>Repair</Link>
@@ -254,14 +253,6 @@ const Navbar = () => {
                 </svg>
               </div>
               <span>Home</span>
-            </button>
-            <button className={styles.mobileNavItem} onClick={handleProductsClick}>
-              <div className={styles.mobileNavIcon}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-              <span>Products</span>
             </button>
             <button className={styles.mobileNavItem} onClick={handleCategoryClick('mobiles')}>
               <div className={styles.mobileNavIcon}>

@@ -346,13 +346,15 @@
     }
 
     .topSection {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 1rem;
+        text-align: left;
     }
 
     .brand {
+        grid-column: 1 / -1;
         align-items: center;
+        text-align: center;
         padding-bottom: 1.5rem;
         border-bottom: 1px solid var(--border-color);
     }
@@ -367,16 +369,16 @@
     }
 
     .linksTitle {
-        text-align: center;
+        text-align: left;
     }
 
     .linksTitle::after {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        transform: none;
     }
 
     .linksList {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .footerLink:hover {
@@ -384,12 +386,31 @@
     }
 
     .contactList {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .contactItem {
-        justify-content: center;
+        justify-content: flex-start;
         text-align: left;
+    }
+
+    /* Contact spans full width */
+    .linksGroup:last-child {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .linksGroup:last-child .linksTitle::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .linksGroup:last-child .contactList {
+        align-items: center;
+    }
+
+    .linksGroup:last-child .contactItem {
+        justify-content: center;
     }
 
     .middleSection {

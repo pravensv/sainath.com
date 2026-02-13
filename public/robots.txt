@@ -1,0 +1,5 @@
+# robots.txt for Sai Nath Mobile
+User-agent: *
+Allow: /
+
+Sitemap: https://praveenvoruganti.github.io/sainath.com/sitemap.xml

@@ -490,6 +490,123 @@
   }
 }
 
+/* ── Repair Services Banner ── */
+.repairBanner {
+  margin-top: 3rem;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.repairBanner:hover {
+  border-color: rgba(240, 147, 251, 0.4);
+  box-shadow: 0 8px 40px rgba(240, 147, 251, 0.15);
+  transform: translateY(-3px);
+}
+
+.repairGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+}
+
+.repairContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.repairIcon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(240, 147, 251, 0.3);
+}
+
+.repairIcon svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.repairInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.repairTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.repairDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.repairFeatures {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.repairFeatures span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: var(--bg-hover);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.repairCta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: var(--radius-md);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.25);
+}
+
+.repairCta svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-base);
+}
+
+.repairBanner:hover .repairCta svg {
+  transform: translateX(4px);
+}
+
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2rem;
@@ -506,5 +623,21 @@
   .categoryGrid,
   .productGrid {
     grid-template-columns: 1fr;
+  }
+
+  .repairContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .repairFeatures {
+    justify-content: center;
+  }
+
+  .repairCta {
+    width: 100%;
+    justify-content: center;
   }
 }
