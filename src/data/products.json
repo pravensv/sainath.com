@@ -61,6 +61,18 @@
       "name": "Ringke",
       "categoryId": "accessories",
       "logo": "ringke-logo.png"
+    },
+    {
+      "id": "vivo",
+      "name": "Vivo",
+      "categoryId": "mobiles",
+      "logo": "vivo-logo.png"
+    },
+    {
+      "id": "oppo",
+      "name": "Oppo",
+      "categoryId": "mobiles",
+      "logo": "oppo-logo.png"
     }
   ],
   "products": [
@@ -214,7 +226,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 129900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-14-pro.jpg",
       "specifications": {
         "display": "6.7-inch Super Retina XDR",
         "processor": "A16 Bionic chip",
@@ -232,7 +244,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 109900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-14-pro.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A16 Bionic chip",
@@ -250,7 +262,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 79900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-14.jpg",
       "specifications": {
         "display": "6.7-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -268,7 +280,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 69900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-14.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -286,7 +298,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 109900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "6.7-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -304,7 +316,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 99900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -322,7 +334,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 59900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-13.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -340,7 +352,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 49900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-13.jpg",
       "specifications": {
         "display": "5.4-inch Super Retina XDR",
         "processor": "A15 Bionic chip",
@@ -358,7 +370,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 49900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-se.jpg",
       "specifications": {
         "display": "6.1-inch Retina HD",
         "processor": "A15 Bionic chip",
@@ -376,7 +388,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 39900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-se.jpg",
       "specifications": {
         "display": "4.7-inch Retina HD",
         "processor": "A15 Bionic chip",
@@ -394,7 +406,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 89900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "6.7-inch Super Retina XDR",
         "processor": "A14 Bionic chip",
@@ -412,7 +424,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 79900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A14 Bionic chip",
@@ -430,7 +442,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 49900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-12.jpg",
       "specifications": {
         "display": "6.1-inch Super Retina XDR",
         "processor": "A14 Bionic chip",
@@ -448,7 +460,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 39900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-12.jpg",
       "specifications": {
         "display": "5.4-inch Super Retina XDR",
         "processor": "A14 Bionic chip",
@@ -466,7 +478,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 69900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "6.5-inch Super Retina XDR",
         "processor": "A13 Bionic chip",
@@ -484,7 +496,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 59900,
-      "image": "iphone-15-pro.jpg",
+      "image": "iphone-12-pro.jpg",
       "specifications": {
         "display": "5.8-inch Super Retina XDR",
         "processor": "A13 Bionic chip",
@@ -502,7 +514,7 @@
       "brandId": "apple",
       "categoryId": "mobiles",
       "price": 39900,
-      "image": "iphone-15.jpg",
+      "image": "iphone-11.jpg",
       "specifications": {
         "display": "6.1-inch Liquid Retina HD",
         "processor": "A13 Bionic chip",
@@ -574,7 +586,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 109999,
-      "image": "samsung-s24-ultra.jpg",
+      "image": "samsung-s23-ultra.jpg",
       "specifications": {
         "display": "6.8-inch Dynamic AMOLED 2X",
         "processor": "Snapdragon 8 Gen 2",
@@ -682,7 +694,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 34999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.6-inch Super AMOLED",
         "processor": "Exynos 1480",
@@ -700,7 +712,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 29999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.4-inch Super AMOLED",
         "processor": "Exynos 1380",
@@ -718,7 +730,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.5-inch Super AMOLED",
         "processor": "Exynos 1280",
@@ -736,7 +748,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 22999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.6-inch Super AMOLED",
         "processor": "Exynos 1380",
@@ -754,7 +766,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 19999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.6-inch Super AMOLED",
         "processor": "Dimensity 1080",
@@ -772,7 +784,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 16999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.5-inch Super AMOLED",
         "processor": "Exynos 1280",
@@ -790,7 +802,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 13999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-a55.jpg",
       "specifications": {
         "display": "6.5-inch Super AMOLED",
         "processor": "Dimensity 6100+",
@@ -803,12 +815,228 @@
       "rating": 4.5
     },
     {
+      "id": "vivo-x100-pro",
+      "name": "Vivo X100 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 89999,
+      "image": "vivo-x100-pro.jpg",
+      "specifications": {
+        "display": "6.78-inch LTPO AMOLED",
+        "processor": "Dimensity 9300",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "5400mAh",
+        "storage": "512GB",
+        "ram": "16GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "vivo-v30-pro",
+      "name": "Vivo V30 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 41999,
+      "image": "vivo-v30-pro.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "vivo-t3",
+      "name": "Vivo T3 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "vivo-t3.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 7200",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "vivo-y200e",
+      "name": "Vivo Y200e 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "vivo-y200e.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 4 Gen 2",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "oppo-find-x7-ultra",
+      "name": "Oppo Find X7 Ultra",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "oppo-find-x7-ultra.jpg",
+      "specifications": {
+        "display": "6.82-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP + 50MP + 50MP + 50MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "oppo-reno-11-pro",
+      "name": "Oppo Reno 11 Pro",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "oppo-reno-11-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 32MP + 8MP",
+        "battery": "4600mAh",
+        "storage": "256GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "oppo-f25-pro",
+      "name": "Oppo F25 Pro",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 23999,
+      "image": "oppo-f25-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Dimensity 7050",
+        "camera": "64MP + 8MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oppo-a79",
+      "name": "Oppo A79 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.72-inch IPS LCD",
+        "processor": "Dimensity 6020",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "vivo-v29-pro",
+      "name": "Vivo V29 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "vivo-v30.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 12MP + 8MP",
+        "battery": "4600mAh",
+        "storage": "256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "vivo-t2-pro",
+      "name": "Vivo T2 Pro 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 23999,
+      "image": "vivo-v30.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 7200",
+        "camera": "64MP + 2MP",
+        "battery": "4600mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oppo-f23",
+      "name": "Oppo F23 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.72-inch IPS LCD",
+        "processor": "Snapdragon 695",
+        "camera": "64MP + 2MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "oppo-a78",
+      "name": "Oppo A78 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 18999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.56-inch IPS LCD",
+        "processor": "Dimensity 700",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
       "id": "samsung-m55",
       "name": "Samsung Galaxy M55 5G",
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 26999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-m-series.jpg",
       "specifications": {
         "display": "6.7-inch Super AMOLED",
         "processor": "Snapdragon 7 Gen 1",
@@ -826,7 +1054,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 16999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-m-series.jpg",
       "specifications": {
         "display": "6.5-inch Super AMOLED",
         "processor": "Exynos 1280",
@@ -844,7 +1072,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 12999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-m-series.jpg",
       "specifications": {
         "display": "6.6-inch PLS LCD",
         "processor": "Exynos 1330",
@@ -862,7 +1090,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-m-series.jpg",
       "specifications": {
         "display": "6.7-inch Super AMOLED",
         "processor": "Snapdragon 7 Gen 1",
@@ -880,7 +1108,7 @@
       "brandId": "samsung",
       "categoryId": "mobiles",
       "price": 14999,
-      "image": "samsung-s24.jpg",
+      "image": "samsung-m-series.jpg",
       "specifications": {
         "display": "6.5-inch Super AMOLED",
         "processor": "Exynos 1280",
@@ -1006,7 +1234,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 39999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-11r.jpg",
       "specifications": {
         "display": "6.74-inch AMOLED",
         "processor": "Snapdragon 8+ Gen 1",
@@ -1168,7 +1396,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.7-inch AMOLED",
         "processor": "Snapdragon 7 Gen 3",
@@ -1186,7 +1414,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 22999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.7-inch AMOLED",
         "processor": "Snapdragon 782G",
@@ -1204,7 +1432,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 29999,
-      "image": "oneplus-12.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.74-inch Super AMOLED",
         "processor": "Dimensity 9000",
@@ -1222,7 +1450,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 17999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.43-inch AMOLED",
         "processor": "Dimensity 900",
@@ -1240,7 +1468,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.43-inch AMOLED",
         "processor": "Dimensity 1300",
@@ -1258,7 +1486,7 @@
       "brandId": "oneplus",
       "categoryId": "mobiles",
       "price": 15999,
-      "image": "oneplus-11.jpg",
+      "image": "oneplus-nord.jpg",
       "specifications": {
         "display": "6.72-inch IPS LCD",
         "processor": "Snapdragon 695",
@@ -1528,7 +1756,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 49999,
-      "image": "xiaomi-14-pro.jpg",
+      "image": "xiaomi-12-pro.jpg",
       "specifications": {
         "display": "6.73-inch LTPO AMOLED",
         "processor": "Snapdragon 8 Gen 1",
@@ -1600,7 +1828,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 29999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Dimensity 7200 Ultra",
@@ -1618,7 +1846,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 22999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Snapdragon 7s Gen 2",
@@ -1636,7 +1864,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 14999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Dimensity 6080",
@@ -1654,7 +1882,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Dimensity 1080",
@@ -1672,7 +1900,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 19999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Dimensity 1080",
@@ -1690,7 +1918,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 11999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Snapdragon 685",
@@ -1726,7 +1954,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 24999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Snapdragon 8s Gen 3",
@@ -1744,7 +1972,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 19999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Snapdragon 7+ Gen 2",
@@ -1762,7 +1990,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 22999,
-      "image": "xiaomi-14-pro.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Dimensity 8300 Ultra",
@@ -1780,7 +2008,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 15999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.67-inch AMOLED",
         "processor": "Snapdragon 7s Gen 2",
@@ -1798,7 +2026,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 10999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.79-inch IPS LCD",
         "processor": "MediaTek Helio G99 Ultra",
@@ -1816,7 +2044,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 9999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.79-inch IPS LCD",
         "processor": "MediaTek Helio G88",
@@ -1834,7 +2062,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 6999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.71-inch IPS LCD",
         "processor": "MediaTek Helio G36",
@@ -1852,7 +2080,7 @@
       "brandId": "xiaomi",
       "categoryId": "mobiles",
       "price": 5999,
-      "image": "xiaomi-13.jpg",
+      "image": "redmi-note-13.jpg",
       "specifications": {
         "display": "6.52-inch IPS LCD",
         "processor": "MediaTek Helio G36",
