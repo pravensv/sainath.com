@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setSelectedCategory, setSelectedBrand } from '../redux/productsSlice'; // clearSelection not exported? check slice
+import { setSelectedCategory, setSelectedBrand, fetchCategoriesAsync, fetchBrandsAsync, fetchProductsAsync } from '../redux/productsSlice';
 import { getProductImage } from '../assets/images';
 import styles from './Products.module.css';
 import { fuzzySearch } from '../utils/search';
@@ -33,17 +33,17 @@ const Products = () => {
   }, [searchQuery, products, dispatch]);
 
   const filteredBrands = selectedCategory
-    ? brands.filter((brand) => brand.categoryId === selectedCategory)
-    : [];
+    ? (brands || []).filter((brand) => brand.categoryId === selectedCategory)
+    : (brands || []);
 
   // Determine which products to show
   const displayProducts = searchQuery
     ? searchResults
     : selectedBrand
-      ? products.filter((product) => product.brandId === selectedBrand)
+      ? (products || []).filter((product) => product.brandId === selectedBrand)
       : selectedCategory
-        ? products.filter((product) => product.categoryId === selectedCategory)
-        : products;
+        ? (products || []).filter((product) => product.categoryId === selectedCategory)
+        : (products || []);
 
   const handleCategorySelect = (categoryId) => {
     dispatch(setSelectedCategory(categoryId));
@@ -60,6 +60,26 @@ const Products = () => {
   return (
     <div className={styles.products}>
       <div className={styles.container}>
+        {/* Loading State */}
+        {useSelector(state => state.products.loading) && (
+          <div className={styles.loading}>
+            <div className={styles.spinner}></div>
+            <p>Loading products...</p>
+          </div>
+        )}
+
+        {/* Error State */}
+        {useSelector(state => state.products.error) && (
+          <div className={styles.error}>
+            <p>{useSelector(state => state.products.error)}</p>
+            <button onClick={() => {
+              dispatch(fetchProductsAsync());
+              dispatch(fetchCategoriesAsync());
+              dispatch(fetchBrandsAsync());
+            }}>Retry</button>
+          </div>
+        )}
+
         <div className={styles.header}>
           <h1 className={styles.title}>
             {searchQuery
@@ -94,7 +114,7 @@ const Products = () => {
           <div className={styles.categorySection}>
             <h2 className={styles.sectionTitle}>Browse by Category</h2>
             <div className={styles.categoryGrid}>
-              {categories.map((category) => (
+              {(categories || []).map((category) => (
                 <div
                   key={category.id}
                   className={styles.categoryCard}
@@ -155,7 +175,7 @@ const Products = () => {
           <div className={styles.brandSection}>
             <h2 className={styles.sectionTitle}>Select Brand</h2>
             <div className={styles.brandGrid}>
-              {filteredBrands.map((brand) => (
+              {(filteredBrands || []).map((brand) => (
                 <div
                   key={brand.id}
                   className={styles.brandCard}

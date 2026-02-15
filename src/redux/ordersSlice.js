@@ -1,76 +1,97 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import {
+    placeOrder as apiPlaceOrder,
+    fetchUserOrders as apiFetchUserOrders
+} from '../utils/api';
 
-// Persist helpers
-const loadOrders = () => {
-    try {
-        const data = localStorage.getItem('sn_orders');
-        return data ? JSON.parse(data) : [];
-    } catch { return []; }
-};
+// ============================================
+// Async Thunks
+// ============================================
 
-const saveOrders = (orders) => {
-    localStorage.setItem('sn_orders', JSON.stringify(orders));
-};
+/**
+ * Place a new order (requires authentication)
+ */
+export const placeOrderAsync = createAsyncThunk(
+    'orders/placeOrder',
+    async (orderData, { rejectWithValue }) => {
+        try {
+            const order = await apiPlaceOrder(orderData);
+            return order;
+        } catch (error) {
+            return rejectWithValue(error.message || 'Failed to place order');
+        }
+    }
+);
+
+/**
+ * Fetch user's orders (requires authentication)
+ */
+export const fetchOrdersAsync = createAsyncThunk(
+    'orders/fetchOrders',
+    async (_, { rejectWithValue }) => {
+        try {
+            const orders = await apiFetchUserOrders();
+            return orders;
+        } catch (error) {
+            return rejectWithValue(error.message || 'Failed to fetch orders');
+        }
+    }
+);
 
 const ordersSlice = createSlice({
     name: 'orders',
     initialState: {
-        orders: loadOrders(),
+        orders: [],
+        loading: false,
+        error: null,
+        successMessage: null,
     },
     reducers: {
-        placeOrder: (state, action) => {
-            const {
-                items,
-                totalAmount,
-                shippingInfo,
-                paymentMethod,
-                userId,
-            } = action.payload;
-
-            const order = {
-                id: `ORD-${Date.now()}`,
-                items: items.map(item => ({
-                    id: item.id,
-                    name: item.name,
-                    price: item.price,
-                    quantity: item.quantity,
-                    totalPrice: item.totalPrice,
-                    image: item.image,
-                })),
-                totalAmount,
-                shippingInfo,
-                paymentMethod,
-                status: 'confirmed',
-                placedAt: new Date().toISOString(),
-                userId,
-                statusHistory: [
-                    { status: 'confirmed', date: new Date().toISOString() },
-                ],
-            };
-
-            state.orders.unshift(order);
-            saveOrders(state.orders);
+        clearMessages: (state) => {
+            state.error = null;
+            state.successMessage = null;
         },
-
-        updateOrderStatus: (state, action) => {
-            const { orderId, status } = action.payload;
-            const order = state.orders.find(o => o.id === orderId);
-            if (order) {
-                order.status = status;
-                order.statusHistory.push({
-                    status,
-                    date: new Date().toISOString(),
-                });
-                saveOrders(state.orders);
-            }
-        },
-
         clearOrders: (state) => {
             state.orders = [];
-            saveOrders(state.orders);
         },
+    },
+    extraReducers: (builder) => {
+        // Place Order
+        builder
+            .addCase(placeOrderAsync.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+                state.successMessage = null;
+            })
+            .addCase(placeOrderAsync.fulfilled, (state, action) => {
+                state.loading = false;
+                state.orders.unshift(action.payload);
+                state.error = null;
+                state.successMessage = 'Order placed successfully!';
+            })
+            .addCase(placeOrderAsync.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload;
+                state.successMessage = null;
+            });
+
+        // Fetch Orders
+        builder
+            .addCase(fetchOrdersAsync.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchOrdersAsync.fulfilled, (state, action) => {
+                state.loading = false;
+                state.orders = action.payload;
+                state.error = null;
+            })
+            .addCase(fetchOrdersAsync.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload;
+            });
     },
 });
 
-export const { placeOrder, updateOrderStatus, clearOrders } = ordersSlice.actions;
+export const { clearMessages, clearOrders } = ordersSlice.actions;
 export default ordersSlice.reducer;

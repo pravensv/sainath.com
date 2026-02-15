@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchOrdersAsync } from '../redux/ordersSlice';
 import styles from './Orders.module.css';
 
 const STATUS_STEPS = ['confirmed', 'processing', 'shipped', 'delivered'];
@@ -42,18 +43,22 @@ const statusIcons = {
 
 const Orders = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const { isAuthenticated, user } = useSelector((state) => state.auth);
-    const { orders } = useSelector((state) => state.orders);
+    const { orders, loading, error } = useSelector((state) => state.orders);
 
     useEffect(() => {
         if (!isAuthenticated) {
             navigate('/signin');
+        } else {
+            // Fetch orders when authenticated
+            dispatch(fetchOrdersAsync());
         }
-    }, [isAuthenticated, navigate]);
+    }, [isAuthenticated, navigate, dispatch]);
 
     if (!isAuthenticated) return null;
 
-    const userOrders = orders.filter(o => o.userId === user?.id);
+    const userOrders = orders;
 
     const formatDate = (iso) => {
         return new Date(iso).toLocaleDateString('en-IN', {
@@ -99,6 +104,22 @@ const Orders = () => {
                     <h1 className={styles.title}>My Orders</h1>
                     <span className={styles.orderCount}>{userOrders.length} order{userOrders.length !== 1 ? 's' : ''}</span>
                 </div>
+
+                {/* Loading State */}
+                {loading && (
+                    <div className={styles.loading}>
+                        <div className={styles.spinner}></div>
+                        <p>Loading your orders...</p>
+                    </div>
+                )}
+
+                {/* Error State */}
+                {error && (
+                    <div className={styles.error}>
+                        <p>{error}</p>
+                        <button onClick={() => dispatch(fetchOrdersAsync())}>Retry</button>
+                    </div>
+                )}
 
                 {/* Order List */}
                 <div className={styles.orderList}>

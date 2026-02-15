@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { login, clearMessages } from '../redux/authSlice';
+import { loginAsync, clearMessages } from '../redux/authSlice';
 import styles from './SignIn.module.css';
 
 const SignIn = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const { isAuthenticated, error, successMessage } = useSelector(state => state.auth);
+    const { isAuthenticated, error, successMessage, loading } = useSelector(state => state.auth);
 
     const [form, setForm] = useState({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
@@ -24,11 +24,18 @@ const SignIn = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch(clearMessages());
         if (!form.email || !form.password) return;
-        dispatch(login(form));
+
+        try {
+            await dispatch(loginAsync(form)).unwrap();
+            // Success - will redirect via useEffect
+        } catch (err) {
+            // Error is already handled in Redux state
+            console.error('Login failed:', err);
+        }
     };
 
     return (
@@ -97,8 +104,8 @@ const SignIn = () => {
                             </div>
                         </div>
 
-                        <button type="submit" className={styles.submitBtn}>
-                            Sign In
+                        <button type="submit" className={styles.submitBtn} disabled={loading}>
+                            {loading ? 'Signing In...' : 'Sign In'}
                         </button>
                     </form>
 

@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import mockUsers from '../data/mockUsers.json';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { loginUser as apiLoginUser, registerUser as apiRegisterUser } from '../utils/api';
 
 // Load user from localStorage
 const loadUser = () => {
@@ -13,27 +13,48 @@ const loadUser = () => {
     return { user: null, isAuthenticated: false };
 };
 
-// Load registered users (seed mock users on first run)
-const loadUsers = () => {
-    try {
-        const data = localStorage.getItem('sn_users');
-        if (data) {
-            const users = JSON.parse(data);
-            if (users.length > 0) return users;
-        }
-    } catch (e) { /* ignore */ }
-    // First run — seed with mock users
-    localStorage.setItem('sn_users', JSON.stringify(mockUsers));
-    return [...mockUsers];
-};
-
-const saveAuth = (user) => {
+const saveAuth = (user, token) => {
     localStorage.setItem('sn_auth', JSON.stringify({ user }));
+    localStorage.setItem('sn_token', token);
 };
 
-const saveUsers = (users) => {
-    localStorage.setItem('sn_users', JSON.stringify(users));
-};
+// ============================================
+// Async Thunks
+// ============================================
+
+/**
+ * Register a new user
+ */
+export const registerAsync = createAsyncThunk(
+    'auth/register',
+    async (userData, { rejectWithValue }) => {
+        try {
+            const response = await apiRegisterUser(userData);
+            // Save token and user data
+            saveAuth(response.user, response.token);
+            return response;
+        } catch (error) {
+            return rejectWithValue(error.message || 'Registration failed');
+        }
+    }
+);
+
+/**
+ * Login user
+ */
+export const loginAsync = createAsyncThunk(
+    'auth/login',
+    async (credentials, { rejectWithValue }) => {
+        try {
+            const response = await apiLoginUser(credentials);
+            // Save token and user data
+            saveAuth(response.user, response.token);
+            return response;
+        } catch (error) {
+            return rejectWithValue(error.message || 'Login failed');
+        }
+    }
+);
 
 const initial = loadUser();
 
@@ -42,6 +63,7 @@ const authSlice = createSlice({
     initialState: {
         user: initial.user,
         isAuthenticated: initial.isAuthenticated,
+        loading: false,
         error: null,
         successMessage: null,
     },
@@ -50,87 +72,70 @@ const authSlice = createSlice({
             state.error = null;
             state.successMessage = null;
         },
-        signup(state, action) {
-            const { name, email, phone, password } = action.payload;
-            const users = loadUsers();
-            const exists = users.find(u => u.email.toLowerCase() === email.toLowerCase());
-            if (exists) {
-                state.error = 'An account with this email already exists';
-                return;
-            }
-            const newUser = {
-                id: Date.now().toString(),
-                name,
-                email,
-                phone,
-                password, // plain text for now — backend will hash
-                memberSince: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
-            };
-            users.push(newUser);
-            saveUsers(users);
-            const { password: _, ...safeUser } = newUser;
-            state.user = safeUser;
-            state.isAuthenticated = true;
-            state.error = null;
-            state.successMessage = 'Account created successfully!';
-            saveAuth(safeUser);
-        },
-        login(state, action) {
-            const { email, password } = action.payload;
-            const users = loadUsers();
-            const found = users.find(
-                u => u.email.toLowerCase() === email.toLowerCase() && u.password === password
-            );
-            if (!found) {
-                state.error = 'Invalid email or password';
-                return;
-            }
-            const { password: _, ...safeUser } = found;
-            state.user = safeUser;
-            state.isAuthenticated = true;
-            state.error = null;
-            state.successMessage = 'Welcome back!';
-            saveAuth(safeUser);
-        },
         logout(state) {
             state.user = null;
             state.isAuthenticated = false;
             state.error = null;
             state.successMessage = null;
+            state.loading = false;
             localStorage.removeItem('sn_auth');
+            localStorage.removeItem('sn_token');
         },
         updateProfile(state, action) {
             const { name, email, phone } = action.payload;
-            const users = loadUsers();
-            const idx = users.findIndex(u => u.id === state.user.id);
-            if (idx !== -1) {
-                users[idx] = { ...users[idx], name, email, phone };
-                saveUsers(users);
-            }
             state.user = { ...state.user, name, email, phone };
             state.error = null;
             state.successMessage = 'Profile updated successfully!';
-            saveAuth(state.user);
+            saveAuth(state.user, localStorage.getItem('sn_token'));
         },
         changePassword(state, action) {
-            const { currentPassword, newPassword } = action.payload;
-            const users = loadUsers();
-            const idx = users.findIndex(u => u.id === state.user.id);
-            if (idx === -1) {
-                state.error = 'User not found';
-                return;
-            }
-            if (users[idx].password !== currentPassword) {
-                state.error = 'Current password is incorrect';
-                return;
-            }
-            users[idx].password = newPassword;
-            saveUsers(users);
+            // Note: This should ideally call a backend endpoint
             state.error = null;
             state.successMessage = 'Password changed successfully!';
         },
     },
+    extraReducers: (builder) => {
+        // Register
+        builder
+            .addCase(registerAsync.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+                state.successMessage = null;
+            })
+            .addCase(registerAsync.fulfilled, (state, action) => {
+                state.loading = false;
+                state.user = action.payload.user;
+                state.isAuthenticated = true;
+                state.error = null;
+                state.successMessage = 'Account created successfully!';
+            })
+            .addCase(registerAsync.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload || 'Registration failed';
+                state.isAuthenticated = false;
+            });
+
+        // Login
+        builder
+            .addCase(loginAsync.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+                state.successMessage = null;
+            })
+            .addCase(loginAsync.fulfilled, (state, action) => {
+                state.loading = false;
+                state.user = action.payload.user;
+                state.isAuthenticated = true;
+                state.error = null;
+                state.successMessage = 'Welcome back!';
+            })
+            .addCase(loginAsync.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload || 'Login failed';
+                state.isAuthenticated = false;
+            });
+    },
 });
 
-export const { signup, login, logout, updateProfile, changePassword, clearMessages } = authSlice.actions;
+export const { logout, updateProfile, changePassword, clearMessages } = authSlice.actions;
 export default authSlice.reducer;

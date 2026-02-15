@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../redux/cartSlice';
-import { placeOrder } from '../redux/ordersSlice';
+import { placeOrderAsync } from '../redux/ordersSlice';
 import styles from './Checkout.module.css';
 
 const Checkout = () => {
@@ -10,6 +10,7 @@ const Checkout = () => {
   const dispatch = useDispatch();
   const { items, totalAmount } = useSelector((state) => state.cart);
   const { isAuthenticated, user } = useSelector((state) => state.auth);
+  const { loading: orderLoading, error: orderError } = useSelector((state) => state.orders);
 
   const [formData, setFormData] = useState({
     name: user?.name || '',
@@ -49,25 +50,35 @@ const Checkout = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Create the order in Redux
-    dispatch(placeOrder({
-      items,
-      totalAmount: Math.round(totalAmount * 1.18),
-      shippingInfo: {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        address: formData.address,
-        city: formData.city,
-        pincode: formData.pincode,
-      },
-      paymentMethod: formData.paymentMethod,
-      userId: user?.id,
-    }));
-    setOrderPlaced(true);
-    dispatch(clearCart());
+
+    try {
+      const orderData = {
+        items: items.map(item => ({
+          productId: item.id,
+          quantity: item.quantity,
+          price: item.price
+        })),
+        totalAmount: Math.round(totalAmount * 1.18),
+        shippingInfo: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          city: formData.city,
+          pincode: formData.pincode,
+        },
+        paymentMethod: formData.paymentMethod,
+      };
+
+      await dispatch(placeOrderAsync(orderData)).unwrap();
+      setOrderPlaced(true);
+      dispatch(clearCart());
+    } catch (err) {
+      console.error('Order placement failed:', err);
+      // Error is already in Redux state
+    }
   };
 
   if (orderPlaced) {
@@ -209,8 +220,8 @@ const Checkout = () => {
               </div>
             </div>
 
-            <button type="submit" className={styles.placeOrderBtn}>
-              Place Order
+            <button type="submit" className={styles.placeOrderBtn} disabled={orderLoading}>
+              {orderLoading ? 'Placing Order...' : 'Place Order'}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>

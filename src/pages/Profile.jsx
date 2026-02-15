@@ -8,7 +8,7 @@ const Profile = () => {
   const dispatch = useDispatch();
   const { user, isAuthenticated } = useSelector(state => state.auth);
 
-  if (!isAuthenticated) {
+  if (!isAuthenticated || !user) {
     navigate('/signin');
     return null;
   }

@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { signup, clearMessages } from '../redux/authSlice';
+import { registerAsync, clearMessages } from '../redux/authSlice';
 import styles from './SignUp.module.css';
 
 const SignUp = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const { isAuthenticated, error } = useSelector(state => state.auth);
+    const { isAuthenticated, error, loading } = useSelector(state => state.auth);
 
     const [form, setForm] = useState({
         name: '', email: '', phone: '', password: '', confirmPassword: ''
@@ -42,7 +42,7 @@ const SignUp = () => {
 
     const strength = getPasswordStrength(form.password);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch(clearMessages());
         setLocalError('');
@@ -60,12 +60,18 @@ const SignUp = () => {
             return;
         }
 
-        dispatch(signup({
-            name: form.name,
-            email: form.email,
-            phone: form.phone,
-            password: form.password,
-        }));
+        try {
+            await dispatch(registerAsync({
+                name: form.name,
+                email: form.email,
+                phone: form.phone,
+                password: form.password,
+            })).unwrap();
+            // Success - will redirect via useEffect
+        } catch (err) {
+            // Error is already handled in Redux state
+            console.error('Registration failed:', err);
+        }
     };
 
     const displayError = localError || error;
@@ -155,7 +161,9 @@ const SignUp = () => {
                             )}
                         </div>
 
-                        <button type="submit" className={styles.submitBtn}>Create Account</button>
+                        <button type="submit" className={styles.submitBtn} disabled={loading}>
+                            {loading ? 'Creating Account...' : 'Create Account'}
+                        </button>
                     </form>
 
                     <div className={styles.footer}>
