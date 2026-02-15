@@ -1,0 +1,2504 @@
+{
+  "categories": [
+    {
+      "id": "mobiles",
+      "name": "Mobile Phones",
+      "image": "mobiles-category.jpg",
+      "description": "Latest smartphones from top brands"
+    },
+    {
+      "id": "accessories",
+      "name": "Mobile Accessories",
+      "image": "accessories-category.jpg",
+      "description": "Cases, chargers, speakers and more"
+    }
+  ],
+  "brands": [
+    {
+      "id": "apple",
+      "name": "Apple",
+      "categoryId": "mobiles",
+      "logo": "apple-logo.png"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "categoryId": "mobiles",
+      "logo": "samsung-logo.png"
+    },
+    {
+      "id": "oneplus",
+      "name": "OnePlus",
+      "categoryId": "mobiles",
+      "logo": "oneplus-logo.png"
+    },
+    {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "categoryId": "mobiles",
+      "logo": "xiaomi-logo.png"
+    },
+    {
+      "id": "generic",
+      "name": "Generic",
+      "categoryId": "accessories",
+      "logo": "generic-logo.png"
+    },
+    {
+      "id": "jbl",
+      "name": "JBL",
+      "categoryId": "accessories",
+      "logo": "jbl-logo.png"
+    },
+    {
+      "id": "anker",
+      "name": "Anker",
+      "categoryId": "accessories",
+      "logo": "anker-logo.png"
+    },
+    {
+      "id": "ringke",
+      "name": "Ringke",
+      "categoryId": "accessories",
+      "logo": "ringke-logo.png"
+    },
+    {
+      "id": "vivo",
+      "name": "Vivo",
+      "categoryId": "mobiles",
+      "logo": "vivo-logo.png"
+    },
+    {
+      "id": "oppo",
+      "name": "Oppo",
+      "categoryId": "mobiles",
+      "logo": "oppo-logo.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "iphone-16-pro-max",
+      "name": "iPhone 16 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 144900,
+      "image": "iphone-15-pro.jpg",
+      "specifications": {
+        "display": "6.9-inch Super Retina XDR OLED",
+        "processor": "A18 Pro chip",
+        "camera": "48MP Main + 12MP Ultra Wide + 12MP 5x Telephoto",
+        "battery": "Up to 33 hours video",
+        "storage": "256GB / 512GB / 1TB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "iphone-16-pro",
+      "name": "iPhone 16 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 119900,
+      "image": "iphone-15-pro.jpg",
+      "specifications": {
+        "display": "6.3-inch Super Retina XDR OLED",
+        "processor": "A18 Pro chip",
+        "camera": "48MP Main + 12MP Ultra Wide + 12MP 5x Telephoto",
+        "battery": "Up to 27 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "8GB"
+      },
+      "inStock": false,
+      "rating": 4.6
+    },
+    {
+      "id": "iphone-16-plus",
+      "name": "iPhone 16 Plus",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 89900,
+      "image": "iphone-15.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR OLED",
+        "processor": "A18 chip",
+        "camera": "48MP Main + 12MP Ultra Wide",
+        "battery": "Up to 27 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "iphone-16",
+      "name": "iPhone 16",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 79900,
+      "image": "iphone-15.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR OLED",
+        "processor": "A18 chip",
+        "camera": "48MP Main + 12MP Ultra Wide",
+        "battery": "Up to 22 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "iphone-15-pro-max",
+      "name": "iPhone 15 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 159900,
+      "image": "iphone-15-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A17 Pro chip",
+        "camera": "48MP Main + 12MP UW + 12MP 5x Telephoto",
+        "battery": "Up to 29 hours video",
+        "storage": "256GB / 512GB / 1TB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "iphone-15-pro",
+      "name": "iPhone 15 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "iphone-15-pro.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A17 Pro chip",
+        "camera": "48MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 23 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "iphone-15-plus",
+      "name": "iPhone 15 Plus",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 89999,
+      "image": "iphone-15.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A16 Bionic chip",
+        "camera": "48MP Main + 12MP Ultra Wide",
+        "battery": "Up to 26 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "iphone-15",
+      "name": "iPhone 15",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 79999,
+      "image": "iphone-15.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A16 Bionic chip",
+        "camera": "48MP Main + 12MP Ultra Wide",
+        "battery": "Up to 20 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-14-pro-max",
+      "name": "iPhone 14 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 129900,
+      "image": "iphone-14-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A16 Bionic chip",
+        "camera": "48MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 29 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "iphone-14-pro",
+      "name": "iPhone 14 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 109900,
+      "image": "iphone-14-pro.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A16 Bionic chip",
+        "camera": "48MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 23 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-14-plus",
+      "name": "iPhone 14 Plus",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 79900,
+      "image": "iphone-14.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 26 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "iphone-14",
+      "name": "iPhone 14",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 69900,
+      "image": "iphone-14.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 20 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-13-pro-max",
+      "name": "iPhone 13 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 109900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 28 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-13-pro",
+      "name": "iPhone 13 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 99900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 22 hours video",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "iphone-13",
+      "name": "iPhone 13",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 59900,
+      "image": "iphone-13.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 19 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "iphone-13-mini",
+      "name": "iPhone 13 Mini",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 49900,
+      "image": "iphone-13.jpg",
+      "specifications": {
+        "display": "5.4-inch Super Retina XDR",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 17 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "iphone-se-2024",
+      "name": "iPhone SE (2024)",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 49900,
+      "image": "iphone-se.jpg",
+      "specifications": {
+        "display": "6.1-inch Retina HD",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main",
+        "battery": "Up to 15 hours video",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-se-2022",
+      "name": "iPhone SE (2022)",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 39900,
+      "image": "iphone-se.jpg",
+      "specifications": {
+        "display": "4.7-inch Retina HD",
+        "processor": "A15 Bionic chip",
+        "camera": "12MP Main",
+        "battery": "Up to 15 hours video",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "iphone-12-pro-max",
+      "name": "iPhone 12 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 89900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch Super Retina XDR",
+        "processor": "A14 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 20 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "iphone-12-pro",
+      "name": "iPhone 12 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 79900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A14 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 17 hours video",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "6GB"
+      },
+      "inStock": false,
+      "rating": 4.3
+    },
+    {
+      "id": "iphone-12",
+      "name": "iPhone 12",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 49900,
+      "image": "iphone-12.jpg",
+      "specifications": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A14 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 17 hours video",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "iphone-12-mini",
+      "name": "iPhone 12 Mini",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 39900,
+      "image": "iphone-12.jpg",
+      "specifications": {
+        "display": "5.4-inch Super Retina XDR",
+        "processor": "A14 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 15 hours video",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "iphone-11-pro-max",
+      "name": "iPhone 11 Pro Max",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 69900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "6.5-inch Super Retina XDR",
+        "processor": "A13 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 20 hours video",
+        "storage": "64GB / 256GB / 512GB",
+        "ram": "4GB"
+      },
+      "inStock": false,
+      "rating": 4.3
+    },
+    {
+      "id": "iphone-11-pro",
+      "name": "iPhone 11 Pro",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 59900,
+      "image": "iphone-12-pro.jpg",
+      "specifications": {
+        "display": "5.8-inch Super Retina XDR",
+        "processor": "A13 Bionic chip",
+        "camera": "12MP Main + 12MP UW + 12MP Telephoto",
+        "battery": "Up to 18 hours video",
+        "storage": "64GB / 256GB / 512GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "iphone-11",
+      "name": "iPhone 11",
+      "brandId": "apple",
+      "categoryId": "mobiles",
+      "price": 39900,
+      "image": "iphone-11.jpg",
+      "specifications": {
+        "display": "6.1-inch Liquid Retina HD",
+        "processor": "A13 Bionic chip",
+        "camera": "12MP Main + 12MP Ultra Wide",
+        "battery": "Up to 17 hours video",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "samsung-s24-ultra",
+      "name": "Samsung Galaxy S24 Ultra",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 124999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "6.8-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "200MP + 50MP + 10MP + 12MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB / 1TB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "samsung-s24-plus",
+      "name": "Samsung Galaxy S24+",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "6.7-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4900mAh",
+        "storage": "256GB / 512GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "samsung-s24",
+      "name": "Samsung Galaxy S24",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 74999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.2-inch Dynamic AMOLED 2X",
+        "processor": "Exynos 2400",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "samsung-s23-ultra",
+      "name": "Samsung Galaxy S23 Ultra",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 109999,
+      "image": "samsung-s23-ultra.jpg",
+      "specifications": {
+        "display": "6.8-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "200MP + 10MP + 10MP + 12MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB / 1TB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "samsung-s23-plus",
+      "name": "Samsung Galaxy S23+",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 84999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "6.6-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4700mAh",
+        "storage": "256GB / 512GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "samsung-s23",
+      "name": "Samsung Galaxy S23",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 64999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.1-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "3900mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": false,
+      "rating": 4.3
+    },
+    {
+      "id": "samsung-s22-ultra",
+      "name": "Samsung Galaxy S22 Ultra",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 89999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "6.8-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "108MP + 10MP + 10MP + 12MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "samsung-s22-plus",
+      "name": "Samsung Galaxy S22+",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 69999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.6-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4500mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": false,
+      "rating": 4.8
+    },
+    {
+      "id": "samsung-s22",
+      "name": "Samsung Galaxy S22",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 54999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.1-inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "3700mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "samsung-a55",
+      "name": "Samsung Galaxy A55 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.6-inch Super AMOLED",
+        "processor": "Exynos 1480",
+        "camera": "50MP + 12MP + 5MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "samsung-a54",
+      "name": "Samsung Galaxy A54 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.4-inch Super AMOLED",
+        "processor": "Exynos 1380",
+        "camera": "50MP + 12MP + 5MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "samsung-a53",
+      "name": "Samsung Galaxy A53 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.5-inch Super AMOLED",
+        "processor": "Exynos 1280",
+        "camera": "64MP + 12MP + 5MP + 5MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "samsung-a35",
+      "name": "Samsung Galaxy A35 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 22999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.6-inch Super AMOLED",
+        "processor": "Exynos 1380",
+        "camera": "50MP + 8MP + 5MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "samsung-a34",
+      "name": "Samsung Galaxy A34 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.6-inch Super AMOLED",
+        "processor": "Dimensity 1080",
+        "camera": "48MP + 8MP + 5MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "samsung-a25",
+      "name": "Samsung Galaxy A25 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 16999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.5-inch Super AMOLED",
+        "processor": "Exynos 1280",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "6GB"
+      },
+      "inStock": false,
+      "rating": 4.9
+    },
+    {
+      "id": "samsung-a15",
+      "name": "Samsung Galaxy A15 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 13999,
+      "image": "samsung-a55.jpg",
+      "specifications": {
+        "display": "6.5-inch Super AMOLED",
+        "processor": "Dimensity 6100+",
+        "camera": "50MP + 5MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "vivo-x100-pro",
+      "name": "Vivo X100 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 89999,
+      "image": "vivo-x100-pro.jpg",
+      "specifications": {
+        "display": "6.78-inch LTPO AMOLED",
+        "processor": "Dimensity 9300",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "5400mAh",
+        "storage": "512GB",
+        "ram": "16GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "vivo-v30-pro",
+      "name": "Vivo V30 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 41999,
+      "image": "vivo-v30-pro.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "vivo-t3",
+      "name": "Vivo T3 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "vivo-t3.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 7200",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "vivo-y200e",
+      "name": "Vivo Y200e 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "vivo-y200e.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 4 Gen 2",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "oppo-find-x7-ultra",
+      "name": "Oppo Find X7 Ultra",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "oppo-find-x7-ultra.jpg",
+      "specifications": {
+        "display": "6.82-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP + 50MP + 50MP + 50MP",
+        "battery": "5000mAh",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.9
+    },
+    {
+      "id": "oppo-reno-11-pro",
+      "name": "Oppo Reno 11 Pro",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "oppo-reno-11-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 32MP + 8MP",
+        "battery": "4600mAh",
+        "storage": "256GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "oppo-f25-pro",
+      "name": "Oppo F25 Pro",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 23999,
+      "image": "oppo-f25-pro.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Dimensity 7050",
+        "camera": "64MP + 8MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oppo-a79",
+      "name": "Oppo A79 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.72-inch IPS LCD",
+        "processor": "Dimensity 6020",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "vivo-v29-pro",
+      "name": "Vivo V29 Pro",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "vivo-v30.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 8200",
+        "camera": "50MP + 12MP + 8MP",
+        "battery": "4600mAh",
+        "storage": "256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "vivo-t2-pro",
+      "name": "Vivo T2 Pro 5G",
+      "brandId": "vivo",
+      "categoryId": "mobiles",
+      "price": 23999,
+      "image": "vivo-v30.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Dimensity 7200",
+        "camera": "64MP + 2MP",
+        "battery": "4600mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oppo-f23",
+      "name": "Oppo F23 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.72-inch IPS LCD",
+        "processor": "Snapdragon 695",
+        "camera": "64MP + 2MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "oppo-a78",
+      "name": "Oppo A78 5G",
+      "brandId": "oppo",
+      "categoryId": "mobiles",
+      "price": 18999,
+      "image": "oppo-a78.jpg",
+      "specifications": {
+        "display": "6.56-inch IPS LCD",
+        "processor": "Dimensity 700",
+        "camera": "50MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "samsung-m55",
+      "name": "Samsung Galaxy M55 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 26999,
+      "image": "samsung-m-series.jpg",
+      "specifications": {
+        "display": "6.7-inch Super AMOLED",
+        "processor": "Snapdragon 7 Gen 1",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": false,
+      "rating": 4.6
+    },
+    {
+      "id": "samsung-m34",
+      "name": "Samsung Galaxy M34 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 16999,
+      "image": "samsung-m-series.jpg",
+      "specifications": {
+        "display": "6.5-inch Super AMOLED",
+        "processor": "Exynos 1280",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "6000mAh",
+        "storage": "128GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "samsung-m14",
+      "name": "Samsung Galaxy M14 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 12999,
+      "image": "samsung-m-series.jpg",
+      "specifications": {
+        "display": "6.6-inch PLS LCD",
+        "processor": "Exynos 1330",
+        "camera": "50MP + 2MP + 2MP",
+        "battery": "6000mAh",
+        "storage": "64GB / 128GB",
+        "ram": "4GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "samsung-f55",
+      "name": "Samsung Galaxy F55 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "samsung-m-series.jpg",
+      "specifications": {
+        "display": "6.7-inch Super AMOLED",
+        "processor": "Snapdragon 7 Gen 1",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "samsung-f34",
+      "name": "Samsung Galaxy F34 5G",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 14999,
+      "image": "samsung-m-series.jpg",
+      "specifications": {
+        "display": "6.5-inch Super AMOLED",
+        "processor": "Exynos 1280",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "6000mAh",
+        "storage": "128GB",
+        "ram": "6GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "samsung-z-fold5",
+      "name": "Samsung Galaxy Z Fold 5",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 154999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "7.6-inch Dynamic AMOLED 2X (Foldable)",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4400mAh",
+        "storage": "256GB / 512GB / 1TB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "samsung-z-flip5",
+      "name": "Samsung Galaxy Z Flip 5",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.7-inch Dynamic AMOLED 2X (Foldable)",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "12MP + 12MP",
+        "battery": "3700mAh",
+        "storage": "256GB / 512GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "samsung-z-fold4",
+      "name": "Samsung Galaxy Z Fold 4",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 129999,
+      "image": "samsung-s24-ultra.jpg",
+      "specifications": {
+        "display": "7.6-inch Dynamic AMOLED 2X (Foldable)",
+        "processor": "Snapdragon 8+ Gen 1",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4400mAh",
+        "storage": "256GB / 512GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "samsung-z-flip4",
+      "name": "Samsung Galaxy Z Flip 4",
+      "brandId": "samsung",
+      "categoryId": "mobiles",
+      "price": 79999,
+      "image": "samsung-s24.jpg",
+      "specifications": {
+        "display": "6.7-inch Dynamic AMOLED 2X (Foldable)",
+        "processor": "Snapdragon 8+ Gen 1",
+        "camera": "12MP + 12MP",
+        "battery": "3700mAh",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "oneplus-12r",
+      "name": "OnePlus 12R",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.78-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5500mAh 100W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-12",
+      "name": "OnePlus 12",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 64999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.82-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP + 64MP + 48MP",
+        "battery": "5400mAh 100W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": false,
+      "rating": 4.1
+    },
+    {
+      "id": "oneplus-11r",
+      "name": "OnePlus 11R",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 39999,
+      "image": "oneplus-11r.jpg",
+      "specifications": {
+        "display": "6.74-inch AMOLED",
+        "processor": "Snapdragon 8+ Gen 1",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 100W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oneplus-11",
+      "name": "OnePlus 11",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 56999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.7-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 32MP + 48MP",
+        "battery": "5000mAh 100W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oneplus-10t",
+      "name": "OnePlus 10T 5G",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Snapdragon 8+ Gen 1",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "4800mAh 150W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-10-pro",
+      "name": "OnePlus 10 Pro",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 49999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.7-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "48MP + 50MP + 8MP",
+        "battery": "5000mAh 80W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "oneplus-10r",
+      "name": "OnePlus 10R 5G",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Dimensity 8100 Max",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 150W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-9rt",
+      "name": "OnePlus 9RT",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.62-inch AMOLED",
+        "processor": "Snapdragon 888",
+        "camera": "50MP + 16MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "oneplus-9r",
+      "name": "OnePlus 9R",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.55-inch AMOLED",
+        "processor": "Snapdragon 870",
+        "camera": "48MP + 16MP + 5MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": false,
+      "rating": 4.6
+    },
+    {
+      "id": "oneplus-9-pro",
+      "name": "OnePlus 9 Pro",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 44999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.7-inch LTPO AMOLED",
+        "processor": "Snapdragon 888",
+        "camera": "48MP + 50MP + 8MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "oneplus-9",
+      "name": "OnePlus 9",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.55-inch AMOLED",
+        "processor": "Snapdragon 888",
+        "camera": "48MP + 50MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "oneplus-nord-ce4",
+      "name": "OnePlus Nord CE4",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Snapdragon 7 Gen 3",
+        "camera": "50MP + 8MP",
+        "battery": "5500mAh 100W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oneplus-nord-ce3",
+      "name": "OnePlus Nord CE3",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 22999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.7-inch AMOLED",
+        "processor": "Snapdragon 782G",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "oneplus-nord-3",
+      "name": "OnePlus Nord 3 5G",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.74-inch Super AMOLED",
+        "processor": "Dimensity 9000",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 80W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "oneplus-nord-ce2",
+      "name": "OnePlus Nord CE 2",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 17999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.43-inch AMOLED",
+        "processor": "Dimensity 900",
+        "camera": "64MP + 8MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4
+    },
+    {
+      "id": "oneplus-nord-2t",
+      "name": "OnePlus Nord 2T",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.43-inch AMOLED",
+        "processor": "Dimensity 1300",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "4500mAh 80W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "oneplus-nord-n30",
+      "name": "OnePlus Nord N30 5G",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 15999,
+      "image": "oneplus-nord.jpg",
+      "specifications": {
+        "display": "6.72-inch IPS LCD",
+        "processor": "Snapdragon 695",
+        "camera": "108MP + 2MP + 2MP",
+        "battery": "5000mAh 50W",
+        "storage": "128GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "oneplus-open",
+      "name": "OnePlus Open",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 139999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "7.82-inch LTPO AMOLED (Foldable)",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "48MP + 64MP + 48MP",
+        "battery": "4805mAh 67W",
+        "storage": "256GB / 512GB",
+        "ram": "16GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "oneplus-ace-3",
+      "name": "OnePlus Ace 3",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.78-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5500mAh 100W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "oneplus-ace-2",
+      "name": "OnePlus Ace 2",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.74-inch AMOLED",
+        "processor": "Snapdragon 8+ Gen 1",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 100W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-8t",
+      "name": "OnePlus 8T",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.55-inch AMOLED",
+        "processor": "Snapdragon 865",
+        "camera": "48MP + 16MP + 5MP + 2MP",
+        "battery": "4500mAh 65W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "oneplus-8-pro",
+      "name": "OnePlus 8 Pro",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.78-inch AMOLED",
+        "processor": "Snapdragon 865",
+        "camera": "48MP + 48MP + 8MP + 5MP",
+        "battery": "4510mAh 30W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "oneplus-7t-pro",
+      "name": "OnePlus 7T Pro",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 855+",
+        "camera": "48MP + 16MP + 8MP",
+        "battery": "4085mAh 30W",
+        "storage": "256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-7t",
+      "name": "OnePlus 7T",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "oneplus-11.jpg",
+      "specifications": {
+        "display": "6.55-inch AMOLED",
+        "processor": "Snapdragon 855+",
+        "camera": "48MP + 16MP + 12MP",
+        "battery": "3800mAh 30W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "oneplus-7-pro",
+      "name": "OnePlus 7 Pro",
+      "brandId": "oneplus",
+      "categoryId": "mobiles",
+      "price": 22999,
+      "image": "oneplus-12.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 855",
+        "camera": "48MP + 16MP + 8MP",
+        "battery": "4000mAh 30W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB / 12GB"
+      },
+      "inStock": false,
+      "rating": 4.5
+    },
+    {
+      "id": "xiaomi-14-ultra",
+      "name": "Xiaomi 14 Ultra",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 99999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.73-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP Leica + 50MP + 50MP + 50MP",
+        "battery": "5300mAh 90W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "xiaomi-14-pro",
+      "name": "Xiaomi 14 Pro",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 79999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.73-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "4880mAh 120W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "xiaomi-14",
+      "name": "Xiaomi 14",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 59999,
+      "image": "xiaomi-13.jpg",
+      "specifications": {
+        "display": "6.36-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "camera": "50MP Leica + 50MP + 50MP",
+        "battery": "4610mAh 90W",
+        "storage": "256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "xiaomi-13-ultra",
+      "name": "Xiaomi 13 Ultra",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 89999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.73-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP Leica + 50MP + 50MP + 50MP",
+        "battery": "5000mAh 90W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "xiaomi-13-pro",
+      "name": "Xiaomi 13 Pro",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 69999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.73-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP Leica + 50MP + 50MP",
+        "battery": "4820mAh 120W",
+        "storage": "256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "xiaomi-13",
+      "name": "Xiaomi 13",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 54999,
+      "image": "xiaomi-13.jpg",
+      "specifications": {
+        "display": "6.36-inch AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4500mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "xiaomi-12-pro",
+      "name": "Xiaomi 12 Pro",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 49999,
+      "image": "xiaomi-12-pro.jpg",
+      "specifications": {
+        "display": "6.73-inch LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "50MP + 50MP + 50MP",
+        "battery": "4600mAh 120W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4
+    },
+    {
+      "id": "xiaomi-12",
+      "name": "Xiaomi 12",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 37999,
+      "image": "xiaomi-13.jpg",
+      "specifications": {
+        "display": "6.28-inch AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "50MP + 13MP + 5MP",
+        "battery": "4500mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "xiaomi-11-ultra",
+      "name": "Xiaomi 11 Ultra",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 44999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.81-inch AMOLED",
+        "processor": "Snapdragon 888",
+        "camera": "50MP + 48MP + 48MP",
+        "battery": "5000mAh 67W",
+        "storage": "256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "xiaomi-11",
+      "name": "Xiaomi 11",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "xiaomi-13.jpg",
+      "specifications": {
+        "display": "6.81-inch AMOLED",
+        "processor": "Snapdragon 888",
+        "camera": "108MP + 13MP + 5MP",
+        "battery": "4600mAh 55W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "redmi-note-13-pro-plus",
+      "name": "Redmi Note 13 Pro+ 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 29999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 7200 Ultra",
+        "camera": "200MP + 8MP + 2MP",
+        "battery": "5000mAh 120W",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": false,
+      "rating": 4.4
+    },
+    {
+      "id": "redmi-note-13-pro",
+      "name": "Redmi Note 13 Pro 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 22999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 7s Gen 2",
+        "camera": "200MP + 8MP + 2MP",
+        "battery": "5100mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "redmi-note-13",
+      "name": "Redmi Note 13 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 14999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 6080",
+        "camera": "108MP + 2MP",
+        "battery": "5000mAh 33W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "redmi-note-12-pro-plus",
+      "name": "Redmi Note 12 Pro+ 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 1080",
+        "camera": "200MP + 8MP + 2MP",
+        "battery": "5000mAh 120W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "redmi-note-12-pro",
+      "name": "Redmi Note 12 Pro 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 1080",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "redmi-note-12",
+      "name": "Redmi Note 12",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 11999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 685",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 33W",
+        "storage": "64GB / 128GB",
+        "ram": "4GB / 6GB"
+      },
+      "inStock": false,
+      "rating": 4
+    },
+    {
+      "id": "poco-f6-pro",
+      "name": "POCO F6 Pro",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 34999,
+      "image": "xiaomi-14-pro.jpg",
+      "specifications": {
+        "display": "6.67-inch LTPO AMOLED",
+        "processor": "Snapdragon 8s Gen 3",
+        "camera": "50MP OIS + 8MP + 2MP",
+        "battery": "5000mAh 120W",
+        "storage": "256GB / 512GB",
+        "ram": "12GB / 16GB"
+      },
+      "inStock": true,
+      "rating": 4
+    },
+    {
+      "id": "poco-f6",
+      "name": "POCO F6",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 24999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 8s Gen 3",
+        "camera": "50MP OIS + 8MP",
+        "battery": "5000mAh 90W",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "poco-f5",
+      "name": "POCO F5",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 19999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 7+ Gen 2",
+        "camera": "64MP + 8MP + 2MP",
+        "battery": "5000mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": true,
+      "rating": 4
+    },
+    {
+      "id": "poco-x6-pro",
+      "name": "POCO X6 Pro 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 22999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Dimensity 8300 Ultra",
+        "camera": "64MP OIS + 8MP + 2MP",
+        "battery": "5000mAh 67W",
+        "storage": "128GB / 256GB / 512GB",
+        "ram": "8GB / 12GB"
+      },
+      "inStock": false,
+      "rating": 4.1
+    },
+    {
+      "id": "poco-x6",
+      "name": "POCO X6 5G",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 15999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.67-inch AMOLED",
+        "processor": "Snapdragon 7s Gen 2",
+        "camera": "64MP + 8MP",
+        "battery": "5100mAh 67W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "redmi-13",
+      "name": "Redmi 13",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 10999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.79-inch IPS LCD",
+        "processor": "MediaTek Helio G99 Ultra",
+        "camera": "108MP + 2MP",
+        "battery": "5030mAh 33W",
+        "storage": "128GB / 256GB",
+        "ram": "6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "redmi-12",
+      "name": "Redmi 12",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 9999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.79-inch IPS LCD",
+        "processor": "MediaTek Helio G88",
+        "camera": "50MP + 8MP + 2MP",
+        "battery": "5000mAh 18W",
+        "storage": "64GB / 128GB / 256GB",
+        "ram": "4GB / 6GB / 8GB"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "redmi-a3",
+      "name": "Redmi A3",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 6999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.71-inch IPS LCD",
+        "processor": "MediaTek Helio G36",
+        "camera": "8MP + QVGA",
+        "battery": "5000mAh 10W",
+        "storage": "64GB / 128GB",
+        "ram": "2GB / 3GB / 4GB"
+      },
+      "inStock": false,
+      "rating": 4.4
+    },
+    {
+      "id": "redmi-a2",
+      "name": "Redmi A2",
+      "brandId": "xiaomi",
+      "categoryId": "mobiles",
+      "price": 5999,
+      "image": "redmi-note-13.jpg",
+      "specifications": {
+        "display": "6.52-inch IPS LCD",
+        "processor": "MediaTek Helio G36",
+        "camera": "8MP",
+        "battery": "5000mAh 10W",
+        "storage": "32GB / 64GB",
+        "ram": "2GB / 4GB"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "jbl-go-4",
+      "name": "JBL Go 4 Portable Bluetooth Speaker",
+      "brandId": "jbl",
+      "categoryId": "accessories",
+      "price": 3499,
+      "image": "speaker-go4.jpg",
+      "specifications": {
+        "type": "Portable Bluetooth Speaker",
+        "bluetooth": "5.3",
+        "battery": "Up to 7 hours",
+        "waterproof": "IP67",
+        "features": "JBL Pro Sound, Ultra-portable, Auracast"
+      },
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "jbl-clip-5",
+      "name": "JBL Clip 5 Bluetooth Speaker",
+      "brandId": "jbl",
+      "categoryId": "accessories",
+      "price": 4999,
+      "image": "speaker-clip5.jpg",
+      "specifications": {
+        "type": "Clip-on Bluetooth Speaker",
+        "bluetooth": "5.3",
+        "battery": "Up to 12 hours",
+        "waterproof": "IP67",
+        "features": "Integrated carabiner, JBL Pro Sound"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "jbl-flip-6",
+      "name": "JBL Flip 6 Wireless Speaker",
+      "brandId": "jbl",
+      "categoryId": "accessories",
+      "price": 9999,
+      "image": "speaker-flip6.jpg",
+      "specifications": {
+        "type": "Portable Wireless Speaker",
+        "bluetooth": "5.1",
+        "battery": "Up to 12 hours",
+        "waterproof": "IP67",
+        "features": "PartyBoost, Powerful bass, Dual passive radiators"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "charger-usbc-20w",
+      "name": "20W USB-C Fast Charger",
+      "brandId": "anker",
+      "categoryId": "accessories",
+      "price": 799,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "USB-C Wall Charger",
+        "power": "20W PD",
+        "ports": "1x USB-C",
+        "features": "Power Delivery 3.0, Compact design",
+        "compatibility": "iPhone, Samsung, OnePlus, Xiaomi"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "charger-usbc-65w",
+      "name": "65W USB-C GaN Charger",
+      "brandId": "anker",
+      "categoryId": "accessories",
+      "price": 1999,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "USB-C GaN Charger",
+        "power": "65W",
+        "ports": "2x USB-C + 1x USB-A",
+        "features": "GaN Technology, Multi-device charging",
+        "compatibility": "Phones, Tablets, Laptops"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "charger-usbc-100w",
+      "name": "100W USB-C Super Charger",
+      "brandId": "anker",
+      "categoryId": "accessories",
+      "price": 2999,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "USB-C Super Charger",
+        "power": "100W",
+        "ports": "2x USB-C + 1x USB-A",
+        "features": "PPS, PD 3.0, Quick Charge 5.0",
+        "compatibility": "All USB-C devices"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "charger-v8-10w",
+      "name": "10W Micro USB (V8) Charger",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 299,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "Micro USB Wall Charger",
+        "power": "10W",
+        "ports": "1x Micro USB (V8)",
+        "features": "Overcharge protection, LED indicator",
+        "compatibility": "All Micro USB devices"
+      },
+      "inStock": false,
+      "rating": 4
+    },
+    {
+      "id": "charger-v8-18w",
+      "name": "18W Micro USB (V8) Fast Charger",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 499,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "Micro USB Fast Charger",
+        "power": "18W Quick Charge",
+        "ports": "1x Micro USB (V8)",
+        "features": "Quick Charge 3.0, Short-circuit protection",
+        "compatibility": "All Micro USB devices"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "cable-usbc-1m",
+      "name": "USB-C to USB-C Cable 1m (C-Type)",
+      "brandId": "anker",
+      "categoryId": "accessories",
+      "price": 399,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "USB-C Cable",
+        "length": "1 meter",
+        "features": "60W PD, Data sync 480Mbps, Nylon braided",
+        "compatibility": "All USB-C (C-Type) devices"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "cable-usbc-2m",
+      "name": "USB-C to USB-C Cable 2m (C-Type)",
+      "brandId": "anker",
+      "categoryId": "accessories",
+      "price": 599,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "USB-C Cable",
+        "length": "2 meters",
+        "features": "100W PD, Data sync 480Mbps, Reinforced connectors",
+        "compatibility": "All USB-C (C-Type) devices"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "cable-v8-1m",
+      "name": "Micro USB (V8) Cable 1m",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 199,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "Micro USB Cable",
+        "length": "1 meter",
+        "features": "2.4A Fast charging, Data sync, Tangle-free",
+        "compatibility": "All V8 / Micro USB devices"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "cable-v8-2m",
+      "name": "Micro USB (V8) Cable 2m",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 299,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "type": "Micro USB Cable",
+        "length": "2 meters",
+        "features": "2.4A Fast charging, Nylon braided, Durable",
+        "compatibility": "All V8 / Micro USB devices"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "privacy-glass-1",
+      "name": "Privacy Glass Screen Protector",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 499,
+      "image": "screen-guard-1.jpg",
+      "specifications": {
+        "type": "Privacy Screen Protector",
+        "material": "9H Tempered Glass with Privacy Film",
+        "features": "Anti-spy 28° viewing angle, Anti-fingerprint, Scratch resistant",
+        "compatibility": "Available for all phone models"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "privacy-glass-2",
+      "name": "Premium Privacy Glass Full Cover",
+      "brandId": "ringke",
+      "categoryId": "accessories",
+      "price": 799,
+      "image": "screen-guard-1.jpg",
+      "specifications": {
+        "type": "Full Coverage Privacy Glass",
+        "material": "9H+ Tempered Glass",
+        "features": "Edge-to-edge privacy, Oleophobic coating, Case friendly",
+        "compatibility": "iPhone 15 / Samsung S24 / OnePlus 12 / Xiaomi 14"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "curved-glass-1",
+      "name": "3D Curved Edge Glass Protector",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 699,
+      "image": "screen-guard-1.jpg",
+      "specifications": {
+        "type": "Curved Edge Screen Protector",
+        "material": "9H Tempered Glass 3D Curved",
+        "features": "Full edge coverage, UV light install, Bubble-free",
+        "compatibility": "Samsung S24 Ultra / S23 Ultra / OnePlus 12"
+      },
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "curved-glass-2",
+      "name": "Premium Curved UV Glass Protector",
+      "brandId": "ringke",
+      "categoryId": "accessories",
+      "price": 999,
+      "image": "screen-guard-1.jpg",
+      "specifications": {
+        "type": "UV Curved Glass Protector",
+        "material": "9H+ Tempered Glass with UV adhesive",
+        "features": "Full glue adhesion, HD clarity, Touch sensitive",
+        "compatibility": "All curved screen phones"
+      },
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "torch-1",
+      "name": "Mobile LED Flash Torch Light",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 199,
+      "image": "torch-1.jpg",
+      "specifications": {
+        "type": "Mobile Torch / LED Flash",
+        "features": "Super bright LED, USB rechargeable, Compact",
+        "battery": "Built-in 500mAh",
+        "brightness": "200 lumens, 3 modes"
+      },
+      "inStock": true,
+      "rating": 4
+    },
+    {
+      "id": "torch-2",
+      "name": "High Power Rechargeable Mini Torch",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 399,
+      "image": "torch-1.jpg",
+      "specifications": {
+        "type": "Rechargeable Mini Torch",
+        "features": "Zoomable beam, USB-C charging, Waterproof IPX4",
+        "battery": "Built-in 1200mAh",
+        "brightness": "500 lumens, 5 modes"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "sticker-1",
+      "name": "Carbon Fiber Back Skin Sticker",
+      "brandId": "ringke",
+      "categoryId": "accessories",
+      "price": 149,
+      "image": "case-1.jpg",
+      "specifications": {
+        "type": "Back Skin Sticker",
+        "material": "3D Carbon Fiber Texture",
+        "features": "Anti-scratch, Bubble-free install, Residue-free removal",
+        "compatibility": "Universal - Custom cut for all models"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "sticker-2",
+      "name": "Matte Finish Back Skin Protector",
+      "brandId": "ringke",
+      "categoryId": "accessories",
+      "price": 199,
+      "image": "case-1.jpg",
+      "specifications": {
+        "type": "Back Skin Protector",
+        "material": "Premium Matte PVC",
+        "features": "Anti-fingerprint, Ultra-thin, Precise cutouts",
+        "compatibility": "Universal - Custom cut for all models"
+      },
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "id": "sticker-3",
+      "name": "Marble Design Back Sticker",
+      "brandId": "ringke",
+      "categoryId": "accessories",
+      "price": 249,
+      "image": "case-1.jpg",
+      "specifications": {
+        "type": "Designer Back Sticker",
+        "material": "Premium Vinyl with Marble Print",
+        "features": "Unique marble pattern, Scratch resistant, Easy apply",
+        "compatibility": "Universal - Custom cut for all models"
+      },
+      "inStock": true,
+      "rating": 4.2
+    },
+    {
+      "id": "phone-case-1",
+      "name": "Premium Silicone Case",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 599,
+      "image": "case-1.jpg",
+      "specifications": {
+        "material": "Premium Silicone",
+        "compatibility": "Universal (Multiple sizes available)",
+        "features": "Shockproof, Anti-slip grip",
+        "colors": "Black, Blue, Red, Clear"
+      },
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "charger-1",
+      "name": "65W Fast Charger",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 1299,
+      "image": "charger-1.jpg",
+      "specifications": {
+        "power": "65W",
+        "ports": "USB-C + USB-A",
+        "features": "Fast charging, Overcharge protection",
+        "compatibility": "Universal"
+      },
+      "inStock": true,
+      "rating": 4.8
+    },
+    {
+      "id": "earphones-1",
+      "name": "Wireless Earbuds Pro",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 2999,
+      "image": "earphones-1.jpg",
+      "specifications": {
+        "bluetooth": "5.3",
+        "battery": "Up to 24 hours with case",
+        "features": "Active Noise Cancellation, Touch controls",
+        "waterproof": "IPX4"
+      },
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "id": "screen-guard-1",
+      "name": "Tempered Glass Screen Protector",
+      "brandId": "generic",
+      "categoryId": "accessories",
+      "price": 299,
+      "image": "screen-guard-1.jpg",
+      "specifications": {
+        "material": "9H Tempered Glass",
+        "thickness": "0.3mm",
+        "features": "Anti-scratch, Anti-fingerprint, Bubble-free installation",
+        "compatibility": "Universal (Multiple sizes available)"
+      },
+      "inStock": true,
+      "rating": 4.6
+    }
+  ]
+}
